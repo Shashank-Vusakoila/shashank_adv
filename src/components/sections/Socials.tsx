@@ -33,7 +33,7 @@ const CREW_SOCIALS = [
     icon: GithubIcon,
     artifact: 'Straw Hat Emblem',
     color: '#F4D35E', // Gold
-    url: 'https://github.com/shashankvusakoila',
+    url: 'https://github.com/Shashank-Vusakoila',
     svgArt: (
       <svg className="w-24 h-24 text-bounty-gold mx-auto drop-shadow-[0_0_15px_#F4D35E]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
         {/* Straw Hat Silhouette outline */}
@@ -51,7 +51,7 @@ const CREW_SOCIALS = [
     icon: LinkedinIcon,
     artifact: 'Glass Log Pose',
     color: '#00D8FF', // Ocean Cyan
-    url: 'https://linkedin.com/in/shashankvusakoila',
+    url: 'https://www.linkedin.com/in/shashank-vusakoila-5b171733a',
     svgArt: (
       <svg className="w-24 h-24 text-cyan-400 mx-auto drop-shadow-[0_0_15px_#00D8FF]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
         {/* Glass sphere compass */}
@@ -73,7 +73,7 @@ const CREW_SOCIALS = [
     icon: InstagramIcon,
     artifact: 'Burning Paper',
     color: '#F77F00', // Orange
-    url: 'https://instagram.com/shashankvusakoila',
+    url: 'https://www.instagram.com/divein_webworks',
     svgArt: (
       <svg className="w-24 h-24 text-sunny-orange mx-auto drop-shadow-[0_0_15px_#F77F00]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
         {/* Irregular burning paper shape */}
@@ -92,7 +92,7 @@ export function Socials() {
   return (
     <section
       id="socials"
-      className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0B132B] py-20 px-6 overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center bg-[#0B132B] py-24 md:py-32 px-6 overflow-hidden"
     >
       {/* Background visual texture */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(28,37,65,0.4),transparent_60%)] pointer-events-none" />

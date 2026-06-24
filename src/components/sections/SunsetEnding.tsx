@@ -26,14 +26,14 @@ export function SunsetEnding() {
     if (typeof window !== 'undefined' && window.triggerSFX) {
       window.triggerSFX('victory');
     }
-    alert('Captain Coordinates copied to clipboard! (shashankvusakoila@gmail.com)');
+    alert('Coordinates copied! Reach the captain at: shashankvusakoila@gmail.com');
   };
 
   return (
     <section
       ref={ref}
       id="sunset"
-      className="relative w-full min-h-screen flex flex-col items-center justify-between bg-gradient-to-t from-[#F77F00]/20 via-[#0B132B] to-[#1a1c36] py-16 px-6 overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-between bg-gradient-to-t from-[#F77F00]/20 via-[#0B132B] to-[#1a1c36] py-24 md:py-32 px-6 overflow-hidden"
     >
       {/* Sunset Background sky glow */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0B132B] to-[#F77F00]/30 opacity-40 pointer-events-none z-0" />

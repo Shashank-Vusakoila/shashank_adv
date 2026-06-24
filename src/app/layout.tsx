@@ -16,20 +16,28 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shashank Vusakoila | Straw Hat Developer - Interactive Portfolio",
-  description: "Set sail with Shashank Vusakoila, a world-class Full Stack Developer, on his Grand Line interactive portfolio adventure inspired by One Piece. Explore code bases, Devil Fruit skills, and epic Boss Battles.",
-  keywords: ["Shashank Vusakoila", "Full Stack Developer", "Next.js", "Three.js", "React Three Fiber", "GSAP Portfolio", "One Piece Developer Portfolio"],
-  authors: [{ name: "Shashank Vusakoila" }],
+  title: 'Shashank Vusakoila | Full Stack Developer - Grand Line Portfolio',
+  description: 'Shashank Vusakoila is a Full Stack Developer from Hyderabad, India. Founder of DiveIn WebWorks. Explore an interactive One Piece-inspired portfolio featuring cinematic project showcases, 3D skill orbits, and the Grand Line journey.',
+  keywords: [
+    'Shashank Vusakoila',
+    'Full Stack Developer Hyderabad',
+    'DiveIn WebWorks',
+    'Next.js Developer India',
+    'React Developer Portfolio',
+    'One Piece Portfolio',
+    'B.Tech CSE Anurag University',
+  ],
+  authors: [{ name: 'Shashank Vusakoila', url: 'https://github.com/Shashank-Vusakoila' }],
   openGraph: {
-    title: "Shashank Vusakoila | Straw Hat Developer - Grand Line Portfolio",
-    description: "An interactive, cinematic One Piece-themed developer adventure showcasing full-stack capabilities.",
-    type: "website",
-    locale: "en_US",
+    title: 'Shashank Vusakoila | Full Stack Developer - Grand Line Portfolio',
+    description: 'An interactive cinematic One Piece-themed developer adventure. Built with Next.js, Three.js, GSAP, Framer Motion, and Tailwind CSS.',
+    type: 'website',
+    locale: 'en_IN',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Shashank Vusakoila | Straw Hat Developer Portfolio",
-    description: "An interactive cinematic developer portfolio inspired by One Piece, built with Next.js, Three.js, GSAP, and Tailwind.",
+    card: 'summary_large_image',
+    title: 'Shashank Vusakoila | Straw Hat Developer Portfolio',
+    description: 'Full Stack Developer from Hyderabad. Interactive One Piece portfolio by Shashank Vusakoila — Founder of DiveIn WebWorks.',
   }
 };
 

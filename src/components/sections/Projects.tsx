@@ -77,7 +77,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0B132B] py-20 px-6 overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center bg-[#0B132B] py-24 md:py-32 px-6 overflow-hidden"
     >
       {/* Dynamic Screen shake/flash overlay on hit */}
       <AnimatePresence>

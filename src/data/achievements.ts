@@ -9,51 +9,51 @@ export interface AchievementBounty {
 
 export const ACHIEVEMENT_BOUNTIES: AchievementBounty[] = [
   {
-    id: 'ssc',
-    title: '10 GPA SSC',
-    subtitle: 'Secondary School Board',
-    bountyValue: 100000000,
-    description: 'Awarded for securing a perfect 10.0 GPA (Grade Point Average) in the Secondary School Certificate board examinations.',
+    id: 'fullstackopen',
+    title: 'Full Stack Open',
+    subtitle: 'University of Helsinki',
+    bountyValue: 220000000,
+    description: 'Awarded for completing the advanced full-stack programming curriculum of the University of Helsinki, focusing on modern React, Redux, Node.js, and CI/CD pipelines.',
     details: [
-      'Top 0.1% score in school board district.',
-      'Perfect marks in Mathematics, Science, and Social Studies.',
-      'Recognized by regional academic board panels for educational excellence.'
-    ]
-  },
-  {
-    id: 'intermediate',
-    title: '95% Intermediate',
-    subtitle: 'Higher Secondary Board',
-    bountyValue: 120000000,
-    description: 'Awarded for securing a 95% total score in the Higher Secondary Board Examinations with MPC stream.',
-    details: [
-      'Rigorous curriculum focusing on Mathematics, Physics, and Chemistry.',
-      'Exemplary performance across state-level standardized evaluations.',
-      'Secured merit ranks in collegiate engineering entrance preparations.'
+      'Deep study of Single Page Application (SPA) architectures.',
+      'Implemented backend services with Express.js, MongoDB, and SQL databases.',
+      'Completed CI/CD and containerization units with 100% test coverage.'
     ]
   },
   {
     id: 'cs50x',
     title: 'Harvard CS50x',
-    subtitle: 'Introduction to Computer Science',
+    subtitle: 'Harvard University',
     bountyValue: 180000000,
     description: 'Completed Harvard University\'s legendary introduction to the intellectual enterprises of computer science and the art of programming.',
     details: [
-      'Comprehensive projects built in C, Python, SQL, HTML, CSS, and JavaScript.',
-      'Deep study of algorithm complexities (Big O notation), data structures (linked lists, hash tables, trees).',
-      'Developed a final full-stack web software verified by Harvard CS50 staff.'
+      'Gained deep familiarity with low-level memory allocation in C.',
+      'Explored data structures, sorting algorithms, and complexity measurements.',
+      'Developed multiple software projects in C, Python, SQL, and JavaScript.'
     ]
   },
   {
-    id: 'fullstackopen',
-    title: 'Full Stack Open',
-    subtitle: 'University of Helsinki',
-    bountyValue: 220000000,
-    description: 'Finished the University of Helsinki\'s advanced curriculum focusing on modern JavaScript-based web development.',
+    id: 'jsalgorithms',
+    title: 'JS Algorithms',
+    subtitle: 'freeCodeCamp Certification',
+    bountyValue: 180000000,
+    description: 'Certified in JavaScript Algorithms and Data Structures, demonstrating advanced logic problem solving and object-oriented programming concepts.',
     details: [
-      'Deep dive into Single Page Applications using React, Redux, Node.js, and Express.',
-      'Implemented robust relational and non-relational database schemas using MongoDB and PostgreSQL.',
-      'Explored CI/CD pipelines, containerization using Docker, and automated end-to-end testing (Cypress).'
+      'Mastered core scripting algorithms and regular expressions.',
+      'Implemented object-oriented and functional programming models.',
+      'Built multiple projects including palindrome checkers and cash registers.'
+    ]
+  },
+  {
+    id: 'responsiveweb',
+    title: 'Responsive Web Design',
+    subtitle: 'freeCodeCamp Certification',
+    bountyValue: 150000000,
+    description: 'Certified in Responsive Web Design, demonstrating proficiency in HTML5, CSS3 layout templates, accessibility rules, and mobile-first responsive structures.',
+    details: [
+      'Mastered Flexbox, CSS Grid layouts, and standard design systems.',
+      'Implemented strict accessibility criteria (aria roles, page semantic tags).',
+      'Created custom portfolios, survey pages, and documentation layouts.'
     ]
   }
 ];

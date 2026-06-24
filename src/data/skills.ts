@@ -1,111 +1,87 @@
 export interface SkillFruit {
   id: string;
   name: string;
-  fruitName: string;
   type: string;
-  description: string;
-  mastery: number; // percentage (0 - 100)
-  level: string; // e.g. "Advanced", "Intermediate"
-  projectsUsed: string[];
+  powerLevel: number;
   color: string;
-  geometryType: 'torusKnot' | 'dodecahedron' | 'icosahedron' | 'cone' | 'octahedron' | 'sphere' | 'torus' | 'tetrahedron';
+  rarity: 'Common' | 'Rare' | 'Epic' | 'Legendary' | 'Mythical';
+  description: string;
+  skills: string[];
+  image: string;
+  category: string;
 }
 
 export const SKILL_FRUITS: SkillFruit[] = [
   {
-    id: 'react',
-    name: 'React.js / Next.js',
-    fruitName: 'Re-Re Fruit (Model: Next)',
-    type: 'Logia (System Control)',
-    description: 'Allows the user to control rendering cycles, manipulate DOM states seamlessly, and deploy server-side portals across the Web.',
-    mastery: 95,
-    level: 'Grandmaster',
-    projectsUsed: ['Reyansh Skin & Hair', 'Orvexa Imports', 'Cakesss Delight'],
-    color: '#00D8FF',
-    geometryType: 'torusKnot'
+    id: 'frontend',
+    name: 'Gomu Gomu',
+    type: 'Paramecia',
+    powerLevel: 95,
+    color: '#E84393',
+    rarity: 'Legendary',
+    description: 'Grants the user the ability to stretch UI boundaries and build dynamic, elastic interfaces.',
+    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    image: '/assets/devil-fruits/frontend.jpg',
+    category: 'FRONTEND',
   },
   {
-    id: 'javascript',
-    name: 'TypeScript / JavaScript',
-    fruitName: 'Sci-Sci Fruit (Model: Script)',
-    type: 'Paramecia (Engine Mastery)',
-    description: 'Grants the ability to manipulate memory addresses, compile synchronous instructions, and invoke asynchronous web execution.',
-    mastery: 92,
-    level: 'Master',
-    projectsUsed: ['Reyansh Skin & Hair', 'Orvexa Imports', 'Relax-In', 'Cakesss Delight'],
-    color: '#F4D35E',
-    geometryType: 'dodecahedron'
+    id: 'backend',
+    name: 'Mera Mera',
+    type: 'Logia',
+    powerLevel: 90,
+    color: '#E17055',
+    rarity: 'Legendary',
+    description: 'Burns through server-side challenges with blazing API architecture.',
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL'],
+    image: '/assets/devil-fruits/backend.jpg',
+    category: 'BACKEND',
   },
   {
-    id: 'node',
-    name: 'Node.js / Express',
-    fruitName: 'No-No Fruit (Model: Server)',
-    type: 'Logia (Stream Flow)',
-    description: 'Provides command over asynchronous event loops, I/O ocean streams, and back-end server routing chambers.',
-    mastery: 88,
-    level: 'Master',
-    projectsUsed: ['Orvexa Imports', 'Relax-In'],
-    color: '#339933',
-    geometryType: 'icosahedron'
+    id: 'mobile',
+    name: 'Raiku Raiku',
+    type: 'Zoan',
+    powerLevel: 80,
+    color: '#A29BFE',
+    rarity: 'Epic',
+    description: 'Lightning-fast mobile development across platforms.',
+    skills: ['React Native', 'Expo', 'Prototyping', 'Push Notifications'],
+    image: '/assets/devil-fruits/mobile.jpg',
+    category: 'MOBILE',
   },
   {
-    id: 'mongodb',
-    name: 'MongoDB / PostgreSQL',
-    fruitName: 'Clu-Clu Fruit (Model: Cluster)',
-    type: 'Paramecia (Storage Haki)',
-    description: 'Empowers the user to create massive document structures, execute querying spells, and lock data records.',
-    mastery: 85,
-    level: 'Expert',
-    projectsUsed: ['Orvexa Imports', 'Relax-In'],
-    color: '#47A248',
-    geometryType: 'cone'
+    id: 'ai',
+    name: 'Ito Ito',
+    type: 'Mythical Zoan',
+    powerLevel: 85,
+    color: '#00CEC9',
+    rarity: 'Epic',
+    description: 'Strings together AI threads to control machine learning and automation.',
+    skills: ['Python', 'Machine Learning', 'OpenAI API', 'LangChain'],
+    image: '/assets/devil-fruits/ai.jpg',
+    category: 'AI & ML',
   },
   {
-    id: 'python',
-    name: 'Python / Django',
-    fruitName: 'Py-Py Fruit (Model: Constrictor)',
-    type: 'Zoan (Beast Processor)',
-    description: 'Transforms the user into a high-speed data cruncher, capable of processing neural nets and automation scripts.',
-    mastery: 80,
-    level: 'Expert',
-    projectsUsed: ['Automation Pipelines', 'AI Agents'],
-    color: '#3776AB',
-    geometryType: 'octahedron'
+    id: 'database',
+    name: 'Hie Hie',
+    type: 'Paramecia',
+    powerLevel: 85,
+    color: '#74B9FF',
+    rarity: 'Rare',
+    description: 'Freezes data in time — absolute control over persistence and queries.',
+    skills: ['MongoDB', 'PostgreSQL', 'Prisma/ORM'],
+    image: '/assets/devil-fruits/database.jpg',
+    category: 'DATABASE',
   },
   {
-    id: 'reactnative',
-    name: 'React Native',
-    fruitName: 'Mo-Mo Fruit (Model: Mobile)',
-    type: 'Paramecia (App Expansion)',
-    description: 'Allows the user to project fluid UI shells directly onto iOS and Android pocket dimensions simultaneously.',
-    mastery: 82,
-    level: 'Expert',
-    projectsUsed: ['Mobile Client Portals'],
-    color: '#61DAFB',
-    geometryType: 'sphere'
-  },
-  {
-    id: 'git',
-    name: 'Git / GitHub',
-    fruitName: 'Lo-Lo Fruit (Model: Version)',
-    type: 'Paramecia (Timeline Split)',
-    description: 'Grants the power to split timelines (branches), merge dimensional changes, and rollback catastrophic historical mistakes.',
-    mastery: 90,
-    level: 'Master',
-    projectsUsed: ['All Battle Repositories'],
-    color: '#F05032',
-    geometryType: 'torus'
-  },
-  {
-    id: 'vercel',
-    name: 'Vercel / Cloud Infrastructure',
-    fruitName: 'Ne-Ne Fruit (Model: Cloud)',
-    type: 'Logia (Edge Deployment)',
-    description: 'Enables instantaneous global distribution of applications via edge CDN streams and cloud hosting vectors.',
-    mastery: 88,
-    level: 'Expert',
-    projectsUsed: ['Reyansh Skin & Hair', 'Orvexa Imports', 'Cakesss Delight'],
-    color: '#FFFFFF',
-    geometryType: 'tetrahedron'
+    id: 'devops',
+    name: 'Yami Yami',
+    type: 'Logia',
+    powerLevel: 90,
+    color: '#636E72',
+    rarity: 'Rare',
+    description: 'Absorbs the darkness of deployment complexity and masters the cloud.',
+    skills: ['Docker', 'AWS', 'CI/CD', 'Git'],
+    image: '/assets/devil-fruits/devops.jpg',
+    category: 'DEVOPS',
   }
 ];

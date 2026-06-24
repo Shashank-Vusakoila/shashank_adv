@@ -36,14 +36,14 @@ export default function Home() {
           >
             {/* Adventure Sections */}
             <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Achievements />
-            <Timeline />
-            <Socials />
-            <Contact />
-            <SunsetEnding />
+      <About />
+      <Skills />
+      <Timeline />
+      <Projects />
+      <Achievements />
+      <Socials />
+      <Contact />
+      <SunsetEnding />
           </motion.div>
         )}
       </AnimatePresence>

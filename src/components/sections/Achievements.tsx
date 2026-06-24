@@ -64,7 +64,7 @@ export function Achievements() {
   return (
     <section
       id="achievements"
-      className="relative w-full min-h-screen flex flex-col items-center justify-center bg-[#0B132B] py-20 px-6 overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center bg-[#0B132B] py-24 md:py-32 px-6 overflow-hidden"
     >
       {/* Background stars / dust */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(28,37,65,0.5),transparent_80%)] pointer-events-none" />

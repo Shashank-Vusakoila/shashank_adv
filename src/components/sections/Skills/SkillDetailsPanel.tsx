@@ -48,10 +48,10 @@ export function SkillDetailsPanel({ activeId, onClose }: SkillDetailsPanelProps)
           {fruit.type}
         </span>
         <h3 className="font-cinzel text-xl font-black text-bounty-gold uppercase mt-3">
-          {fruit.fruitName}
+          {fruit.name}
         </h3>
         <h4 className="font-cinzel text-sm text-white tracking-widest uppercase opacity-75">
-          Ability: {fruit.name}
+          Rarity: {fruit.rarity}
         </h4>
       </div>
 
@@ -64,13 +64,13 @@ export function SkillDetailsPanel({ activeId, onClose }: SkillDetailsPanelProps)
       <div className="mb-6 flex flex-col gap-4">
         <div>
           <div className="flex justify-between items-center mb-1 text-xs uppercase tracking-wider font-cinzel">
-            <span className="text-gray-400">Mastery Level</span>
-            <span className="text-bounty-gold font-bold">{fruit.level} ({fruit.mastery}%)</span>
+            <span className="text-gray-400">Power Level</span>
+            <span className="text-bounty-gold font-bold">{fruit.powerLevel} / 100</span>
           </div>
           <div className="h-2.5 bg-[#0B132B] rounded-full overflow-hidden p-[2px] border border-white/5">
             <motion.div
               initial={{ width: 0 }}
-              animate={{ width: `${fruit.mastery}%` }}
+              animate={{ width: `${fruit.powerLevel}%` }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className="h-full rounded-full"
               style={{ backgroundColor: fruit.color }}
@@ -91,18 +91,18 @@ export function SkillDetailsPanel({ activeId, onClose }: SkillDetailsPanelProps)
         </div>
       </div>
 
-      {/* Projects list */}
+      {/* Skills list */}
       <div>
         <h5 className="font-cinzel text-xs tracking-wider text-white uppercase mb-2">
-          Deployed in Battles:
+          Abilities Unlocked:
         </h5>
         <div className="flex flex-wrap gap-2">
-          {fruit.projectsUsed.map((proj, idx) => (
+          {fruit.skills.map((skill, idx) => (
             <span
               key={idx}
               className="text-[10px] font-mono bg-[#1C2541] border border-white/10 px-2 py-1 rounded text-gray-300"
             >
-              {proj}
+              {skill}
             </span>
           ))}
         </div>

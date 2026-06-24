@@ -7,13 +7,14 @@ import { useAudioStore } from '@/store/useAudioStore';
 import { useGameStore } from '@/store/useGameStore';
 
 const NAV_LINKS = [
-  { href: '#hero', label: 'Intro' },
-  { href: '#about', label: 'Pirate Log' },
-  { href: '#skills', label: 'Devil Fruits' },
-  { href: '#projects', label: 'Boss Battles' },
+  { href: '#hero',         label: 'Intro' },
+  { href: '#about',        label: 'Pirate Log' },
+  { href: '#skills',       label: 'Devil Fruits' },
+  { href: '#timeline',     label: 'Grand Line' },
+  { href: '#projects',     label: 'Boss Battles' },
   { href: '#achievements', label: 'Bounty Board' },
-  { href: '#timeline', label: 'Grand Line' },
-  { href: '#contact', label: 'Recruit Me' },
+  { href: '#socials',      label: 'Crew' },
+  { href: '#contact',      label: 'Recruit Me' },
 ];
 
 export function Navbar() {
@@ -73,7 +74,7 @@ export function Navbar() {
         <a href="#hero" className="flex items-center gap-2 text-bounty-gold group">
           <Compass className="w-6 h-6 transition-transform group-hover:rotate-45 duration-300" />
           <span className="font-cinzel text-lg font-black tracking-widest text-white group-hover:text-bounty-gold transition-colors">
-            SHASHANK
+            SHASHANK V.
           </span>
         </a>
 
